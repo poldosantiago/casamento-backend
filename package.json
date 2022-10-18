@@ -4,7 +4,7 @@
   "description": "base de dados para a aplicação",
   "main": "index.js",
   "scripts": {
-    "start" : "node db.js",
+    "start" : "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
