@@ -1,0 +1,20 @@
+{
+  "name": "casamento-backend",
+  "version": "1.0.0",
+  "description": "base de dados para a aplicação",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poldosantiago/casamento-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poldosantiago/casamento-backend/issues"
+  },
+  "homepage": "https://github.com/poldosantiago/casamento-backend#readme"
+}
