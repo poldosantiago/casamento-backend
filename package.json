@@ -12,8 +12,11 @@
     "url": "git+https://github.com/poldosantiago/casamento-backend.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Leopoldo couto",
   "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
   "bugs": {
     "url": "https://github.com/poldosantiago/casamento-backend/issues"
   },
