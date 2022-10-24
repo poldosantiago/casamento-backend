@@ -1,10 +1,7 @@
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
+import app from './src/app.js'
+
 const port = process.env.PORT || 3000;
 
-server.use(middlewares);
-server.use(router);
-
-server.listen(port);
+app.listen(port, () => {
+  console.log(`Servidor escutando em http://localhost:${port}`)
+})

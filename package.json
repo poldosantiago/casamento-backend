@@ -1,24 +1,21 @@
 {
   "name": "casamento-backend",
   "version": "1.0.0",
-  "description": "base de dados para a aplicação",
-  "main": "index.js",
+  "description": "backend do sistema de cadastro do casamento",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start" : "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/poldosantiago/casamento-backend.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "Leopoldo couto",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "express": "^4.18.2",
+    "mongoose": "^6.6.7"
   },
-  "bugs": {
-    "url": "https://github.com/poldosantiago/casamento-backend/issues"
-  },
-  "homepage": "https://github.com/poldosantiago/casamento-backend#readme"
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
