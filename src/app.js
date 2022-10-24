@@ -9,6 +9,15 @@ db.once("open", () => {
 
 const app = express();
 app.use(express.json())
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://seu_site.com");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
 routes(app);
 
 export default app
