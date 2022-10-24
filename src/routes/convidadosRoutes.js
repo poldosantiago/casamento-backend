@@ -5,6 +5,7 @@ const router = express.Router();
 
 router
   .get("/convidados", ConvidadosController.listarConvidados)
+  .get("/convidados/busca", ConvidadosController.listarConvidadoPorNome)
   .get("/convidados/:id", ConvidadosController.listarConvidadoPorId)
   .post("/convidados", ConvidadosController.cadastrarConvidado)
   // .put("/convidados/:id", ConvidadosController.atualizarConvidado)

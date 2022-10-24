@@ -20,6 +20,19 @@ class ConvidadosController {
     })
   }
 
+  static listarConvidadoPorNome(req, res){
+    const nome = req.query.nome;
+
+    convidados.find({'nome':nome}, (err, convidados) => {
+      if(err) {
+        res.status(400).send({message: `${err.message} - convidado não localizado.`})
+      } else {
+        res.status(200).send(convidados);
+      } 
+    })
+  }
+
+
   static cadastrarConvidado(req, res){
     let convidado = new convidados(req.body);
 
