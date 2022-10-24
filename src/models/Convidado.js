@@ -8,11 +8,11 @@ const livroSchema = new mongoose.Schema(
     telefone: {type: String, required: true},
     adultos: {type: Number, required: true},
     criancas: {type: Number, required: true},
-    modelo: {type: String, required: true},
-    condutor: {type: String, required: true},
-    placa: {type: String, required: true}
+    modelo: {type: String},
+    condutor: {type: String},
+    placa: {type: String}
   }
 );
 
-const convidados= mongoose.model('convidados', livroSchema);
+const convidados = mongoose.model('convidados', livroSchema);
 export default convidados;
