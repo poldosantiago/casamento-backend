@@ -1,6 +1,7 @@
 import express from "express";
 import db from "./config/dbConnect.js"
 import routes from "./routes/index.js"
+import cors from 'cors';
 
 db.on("error", console.log.bind(console, 'Erro de conexão'))
 db.once("open", () => {
@@ -8,15 +9,9 @@ db.once("open", () => {
 })
 
 const app = express();
-app.use(express.json())
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://casamento-backend.herokuapp.com");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+
+app.use(cors()); //uso para não dar o erro de cors
+app.use(express.json());
 
 routes(app);
 
